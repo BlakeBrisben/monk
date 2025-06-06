@@ -24,6 +24,9 @@ if (5 < 10) {
 10 != 9;
 10 >= 9;
 9 <= 10;
+"foobar"
+"foo bar"
+	[1, 2];
 `
 
 	tests := []struct {
@@ -110,6 +113,14 @@ if (5 < 10) {
 		{token.INT, "9"},
 		{token.LT_EQ, "<="},
 		{token.INT, "10"},
+		{token.SEMICOLON, ";"},
+		{token.STRING, "foobar"},
+		{token.STRING, "foo bar"},
+		{token.LBRACKET, "["},
+		{token.INT, "1"},
+		{token.COMMA, ","},
+		{token.INT, "2"},
+		{token.RBRACKET, "]"},
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
 	}
