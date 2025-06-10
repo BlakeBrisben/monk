@@ -1,0 +1,13 @@
+let five = 5;
+let six = "six";
+let one = true;
+
+five
+one
+puts(five);
+puts(six);
+puts(one);
+
+let adder = fn(x, y) {return x + y;};
+
+puts(adder(1, 2));
