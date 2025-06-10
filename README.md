@@ -1,1 +1,2 @@
-This branch has been surpassed by monk2. That is where all new additions will be 
+This is the completed code following the book "Writing an interpretor in Go" by Thorsten Ball
+
